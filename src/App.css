@@ -1,0 +1,98 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #6dd5ed, #2193b0);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333333;
+}
+
+/* Center and style the card */
+.card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Card body */
+.card-body {
+  padding: 20px;
+}
+
+/* Title styling */
+.title {
+  font-size: 2em;
+  color: #2193b0;
+  margin-bottom: 20px;
+}
+
+/* Input field styling */
+input[type="text"] {
+  color: #2193b0;
+  padding: 12px;
+  width: 80%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #2193b0;
+  box-shadow: 0 0 10px rgba(33, 147, 176, 0.5);
+  outline: none;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+  background-color: #2193b0;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #1d8ca8;
+  transform: translateY(-2px);
+}
+
+/* Result text */
+h1 {
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+/* For smaller screens */
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+}
